@@ -10,7 +10,7 @@ AUTH_SERVER: string= 'http://localhost:3000';
 authSubject = new BehaviorSubject(false);
   private token:any;
 
-  constructor(private httpClient: HttpClient, token:String) { }
+  constructor(private httpClient: HttpClient) { }
   register(user:User): Observable<JwtResponse>{
     return this.httpClient.post<JwtResponse>(`${this.AUTH_SERVER}/register`,
     user).pipe(tap(
