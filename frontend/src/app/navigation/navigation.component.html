@@ -3,17 +3,43 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>LOGO</mat-toolbar>
+    <mat-toolbar>LOGO
+    </mat-toolbar>
+   
     <mat-nav-list>
-      <a mat-list-item href="#">Inicio</a>
-      <a mat-list-item href="#">Tarjetas</a>
-      <a mat-list-item href="#">Préstamos</a>
-      <a mat-list-item href="#">Operaciones</a>
-      <a mat-list-item href="#">Te ofrecemos</a>
-      <a mat-list-item href="#">Seguros</a>
-      <a mat-list-item href="#">Puntos</a>
-      <a mat-list-item href="#">Ayuda</a>
-      <a mat-list-item href="#">Cerrar Sesión</a>
+     
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        Inicio
+      </a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon>credit_card</mat-icon>
+        Tarjetas
+      </a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon> attach_money</mat-icon>
+        Préstamos
+      </a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon>compare_arrows</mat-icon>
+
+        Operaciones</a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon> bar_chart</mat-icon>
+
+        Te ofrecemos</a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon>security</mat-icon>
+        Seguros</a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon>card_giftcard</mat-icon>
+        Puntos</a>
+      <a mat-list-item href="/menuPrincipal">
+        <mat-icon>help_outline</mat-icon>
+        Ayuda</a>
+      <a mat-list-item href="">
+        <mat-icon>exit_to_app</mat-icon>
+        Cerrar Sesión</a>
 
 
 
@@ -32,7 +58,10 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>LOGO</span>
+      <span>LOGO
+     
+
+      </span>
     </mat-toolbar>
     <app-dashboard></app-dashboard>
   </mat-sidenav-content >
