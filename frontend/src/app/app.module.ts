@@ -17,13 +17,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuprincipalComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    CardComponent
   
   ],
   imports: [

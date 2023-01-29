@@ -3,11 +3,23 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>LOGO</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#">Inicio</a>
+      <a mat-list-item href="#">Tarjetas</a>
+      <a mat-list-item href="#">Préstamos</a>
+      <a mat-list-item href="#">Operaciones</a>
+      <a mat-list-item href="#">Te ofrecemos</a>
+      <a mat-list-item href="#">Seguros</a>
+      <a mat-list-item href="#">Puntos</a>
+      <a mat-list-item href="#">Ayuda</a>
+      <a mat-list-item href="#">Cerrar Sesión</a>
+
+
+
+
+
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,7 +32,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>frontend</span>
+      <span>LOGO</span>
     </mat-toolbar>
     <app-dashboard></app-dashboard>
   </mat-sidenav-content >
