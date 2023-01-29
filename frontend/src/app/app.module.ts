@@ -18,6 +18,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { CardComponent } from './card/card.component';
+import { BalanceChartComponent } from './balance-chart/balance-chart.component';
+import { NgChartsModule } from 'ng2-charts';
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { TransaccionesTableComponent } from './transacciones-table/transacciones-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,10 @@ import { CardComponent } from './card/card.component';
     MenuprincipalComponent,
     NavigationComponent,
     DashboardComponent,
-    CardComponent
+    CardComponent,
+    BalanceChartComponent,
+    CreditCardComponent,
+    TransaccionesTableComponent
   
   ],
   imports: [
@@ -42,6 +52,10 @@ import { CardComponent } from './card/card.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    NgChartsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [
 
