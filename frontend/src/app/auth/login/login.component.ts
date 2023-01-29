@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   }
 onLogin(form:any): void{
 this.authService.login(form.value).subscribe(res=>{
-  this.router.navigateByUrl('/auth');
+  this.router.navigateByUrl('/menuPrincipal');
 });
 }
 }
